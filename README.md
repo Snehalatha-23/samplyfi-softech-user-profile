@@ -1,248 +1,147 @@
-# ReactJS Frontend Developer Assignments
+# 🎯 ReactJS Frontend Developer Assignments  
 
-This project contains implementations for both Assignment 1 (Basic) and Assignment 2 (Advanced) for the ReactJS Frontend Developer position.
-
-## 🚀 Quick Start
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd reactjs-assignments
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Toggle between assignments**
-   - Open `src/index.tsx`
-   - Change `SHOW_ADVANCED` to `false` for Assignment 1
-   - Change `SHOW_ADVANCED` to `true` for Assignment 2
-
-## 📋 Assignments Overview
-
-### Assignment 1 - Basic Implementation
-**Target:** Beginner React developers
-**Features:**
-- ✅ Fetch user data from JSONPlaceholder API
-- ✅ Display user profiles with DiceBear avatars  
-- ✅ Bootstrap styling with responsive cards
-- ✅ Loading spinner while fetching data
-- ✅ Error handling with retry functionality
-- ✅ Hover effects and smooth animations
-
-**Technologies:**
-- React 18 with TypeScript
-- Bootstrap 5
-- Font Awesome icons
-- CSS animations
-
-### Assignment 2 - Advanced Implementation  
-**Target:** Experienced React developers
-**Features:**
-- ✅ All Assignment 1 features
-- ✅ Ant Design UI components
-- ✅ Fully responsive design (mobile, tablet, desktop)
-- ✅ Edit user functionality with modal forms
-- ✅ Delete users with confirmation
-- ✅ Like/Unlike functionality
-- ✅ Advanced state management (lifting state up)
-- ✅ Form validation and error handling
-
-**Technologies:**
-- React 18 with TypeScript
-- Ant Design 5
-- Advanced React patterns
-- Responsive grid system
-
-## 🏗️ Project Structure
-
-```
-src/
-├── components/
-│   ├── UserCard.tsx              # Basic user card (Assignment 1)
-│   ├── UserCardAdvanced.tsx      # Advanced user card (Assignment 2)
-│   ├── LoadingSpinner.tsx        # Loading component (Assignment 1)
-│   ├── LoadingSpinnerAdvanced.tsx # Loading component (Assignment 2)
-│   ├── EditUserModal.tsx         # Edit user modal (Assignment 2)
-│   └── LoadingSpinner.css        # Custom loading animations
-├── types/
-│   └── User.ts                   # TypeScript interfaces
-├── App.tsx                       # Assignment 1 main component
-├── App-Advanced.tsx              # Assignment 2 main component
-├── App.css                       # Global styles
-└── index.tsx                     # Entry point with assignment toggle
-```
-
-## 🎨 Design Features
-
-### Assignment 1 (Basic)
-- Clean, professional card layout
-- Bootstrap-based responsive design
-- Smooth hover animations
-- Custom loading spinner
-- Font Awesome icons
-- Error states with retry functionality
-
-### Assignment 2 (Advanced)
-- Modern Ant Design components
-- Mobile-first responsive design
-- Interactive elements (like, edit, delete)
-- Modal forms with validation
-- Advanced state management
-- Sophisticated user interactions
-
-## 📱 Responsive Breakpoints
-
-- **Mobile:** < 768px (xs: 24 cols)
-- **Tablet:** 768-1024px (sm: 12 cols, md: 8 cols)  
-- **Desktop:** > 1024px (lg: 6 cols)
-
-## 🔧 API Integration
-
-### Users API
-- **Endpoint:** `https://jsonplaceholder.typicode.com/users`
-- **Method:** GET
-- **Response:** Array of 10 user objects
-
-### Avatar API  
-- **Base URL:** `https://avatars.dicebear.com/v2/avataaars/`
-- **Pattern:** `{username}.svg?options[mood][]=happy`
-- **Fallback:** Placeholder image on error
-
-## ✨ Key Features Demonstrated
-
-### Assignment 1 Skills
-- [x] Create React App setup
-- [x] JSX syntax and components
-- [x] Props and component composition  
-- [x] State management with useState
-- [x] Side effects with useEffect
-- [x] API data fetching
-- [x] Conditional rendering
-- [x] List rendering with map()
-- [x] Event handling
-- [x] CSS styling and animations
-
-### Assignment 2 Additional Skills
-- [x] Third-party UI library integration (Ant Design)
-- [x] Complex state management
-- [x] Form handling and validation
-- [x] Modal management
-- [x] Responsive design patterns
-- [x] Event handling (CRUD operations)
-- [x] Lifting state up pattern
-- [x] Advanced TypeScript usage
-- [x] Component lifecycle optimization
-
-## 🚀 Deployment
-
-### Build the project
-```bash
-npm run build
-```
-
-### Deploy with Vercel (Recommended)
-1. Install Vercel CLI: `npm install -g vercel`
-2. Build the app: `npm run build`
-3. Navigate to build folder: `cd build`  
-4. Deploy: `vercel --prod`
-
-### Alternative Deployment Options
-- Netlify
-- GitHub Pages
-- Firebase Hosting
-- Surge.sh
-
-## 📊 Performance Optimizations
-
-- Lazy loading of images
-- Error boundaries for graceful failures
-- Optimized re-renders with proper key props
-- Efficient state updates
-- Responsive images with proper sizing
-
-## 🔍 Testing the Applications
-
-### Assignment 1 Testing
-- ✅ Desktop layout (Chrome recommended)
-- ✅ Data fetching and display
-- ✅ Loading states
-- ✅ Error handling
-- ✅ Responsive card layout
-
-### Assignment 2 Testing  
-- ✅ Mobile responsiveness (< 768px)
-- ✅ Tablet layout (768-1024px)
-- ✅ Desktop layout (> 1024px)
-- ✅ CRUD operations (Create, Read, Update, Delete)
-- ✅ Form validation
-- ✅ Modal interactions
-- ✅ Like functionality
-
-## 📄 Assignment Requirements Checklist
-
-### Assignment 1 ✅
-- [x] Fetch data from users API
-- [x] Display user profiles with avatars
-- [x] Bootstrap styling  
-- [x] Loading indicator
-- [x] Desktop-focused design
-- [x] Exact replica of demo functionality
-
-### Assignment 2 ✅
-- [x] All Assignment 1 features
-- [x] Ant Design implementation
-- [x] Responsive design (mobile/tablet/desktop)
-- [x] Edit user modal with form
-- [x] Delete functionality
-- [x] Like/unlike feature
-- [x] Advanced state management
-- [x] Event handling and form validation
-
-## 🤝 Submission Guidelines
-
-1. **Code Sharing:**
-   - Create public GitHub repository
-   - Ensure `node_modules` is excluded
-   - Share repository link via email
-
-2. **Live Demo:**
-   - Deploy to hosting platform
-   - Test on Chrome browser
-   - Verify responsive behavior
-   - Share live URL
-
-## 💡 Additional Notes
-
-- Both assignments use the same API endpoints
-- Type safety implemented throughout with TypeScript
-- Error handling and loading states included
-- Modern React patterns and best practices followed
-- Production-ready code with proper organization
-- Comprehensive commenting and documentation
-
-## 🐛 Troubleshooting
-
-### Common Issues
-- **CORS Errors:** The JSONPlaceholder API should work without CORS issues
-- **Avatar Loading:** Fallback images provided for failed avatar loads
-- **Responsive Issues:** Test on actual devices for best results
-- **Build Errors:** Ensure all dependencies are installed correctly
-
-### Support
-For any issues or questions, please check:
-1. Console for error messages
-2. Network tab for API call issues  
-3. Dependencies are properly installed
-4. Node.js version compatibility
+This repository contains two ReactJS implementations — one **Basic** and one **Advanced** — built for the **Frontend Developer position at Samplyfi Softech**. It demonstrates both **core React fundamentals** and **advanced UI/UX patterns** with modern libraries.
 
 ---
 
-**Made with ❤️ for Simplyfi Softech**
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/Snehalatha-23/samplyfi-softech-user-profile.git
+cd samplyfi-softech-user-profile
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+👉 Toggle assignments in src/index.tsx:
+
+ts
+Copy code
+const SHOW_ADVANCED = false; // Assignment 1
+const SHOW_ADVANCED = true;  // Assignment 2
+📋 Assignments Overview
+🟢 Assignment 1 – Basic
+Fetch users from JSONPlaceholder API
+
+Display profiles with DiceBear avatars
+
+Bootstrap 5 responsive card layout
+
+Loading spinner + error handling with retry
+
+Smooth hover animations
+
+Tech Stack: React 18 • TypeScript • Bootstrap 5 • Font Awesome
+
+🔵 Assignment 2 – Advanced
+All features of Assignment 1
+
+Ant Design 5 modern UI components
+
+Fully responsive (mobile, tablet, desktop)
+
+Edit, Delete, Like/Unlike profiles
+
+Modal forms with validation
+
+State lifting & advanced state management
+
+Tech Stack: React 18 • TypeScript • Ant Design 5
+
+🏗️ Project Structure
+bash
+Copy code
+src/
+├── components/
+│   ├── UserCard.tsx              # Basic card
+│   ├── UserCardAdvanced.tsx      # Advanced card
+│   ├── LoadingSpinner.tsx        # Basic spinner
+│   ├── LoadingSpinnerAdvanced.tsx# Advanced spinner
+│   ├── EditUserModal.tsx         # Edit modal
+│   └── LoadingSpinner.css        # Animations
+├── types/User.ts                  # TypeScript interfaces
+├── App.tsx                        # Assignment 1 entry
+├── App-Advanced.tsx               # Assignment 2 entry
+├── App.css                        # Global styles
+└── index.tsx                      # Assignment toggle
+🎨 UI & Design
+Assignment 1: Clean Bootstrap cards, retry button, hover animations
+
+Assignment 2: Ant Design components, CRUD actions, responsive grid
+
+📱 Breakpoints:
+
+Mobile: <768px
+
+Tablet: 768–1024px
+
+Desktop: >1024px
+
+🔗 APIs
+Users API: https://jsonplaceholder.typicode.com/users
+
+Avatars API:
+
+bash
+Copy code
+https://avatars.dicebear.com/v2/avataaars/{username}.svg?options[mood][]=happy
+✅ Skills Demonstrated
+Assignment 1
+React setup, components, props, state, hooks
+
+API fetching & error handling
+
+Conditional rendering, list rendering
+
+Bootstrap responsive styling
+
+Assignment 2
+Ant Design integration
+
+State lifting & complex updates
+
+Modal management & form validation
+
+CRUD operations (edit/delete)
+
+Like/unlike feature
+
+Mobile-first responsive design
+
+🚀 Deployment
+bash
+Copy code
+npm run build
+Recommended: Vercel
+
+bash
+Copy code
+npm install -g vercel
+cd build
+vercel --prod
+Also works with Netlify, GitHub Pages, Firebase Hosting.
+
+📊 Optimizations
+Lazy-loaded images
+
+Error boundaries for resilience
+
+Efficient re-renders with keys
+
+Optimized state updates
+
+🧪 Testing Checklist
+✅ Responsive layouts (mobile/tablet/desktop)
+
+✅ Loading & error states
+
+✅ CRUD operations (Assignment 2)
+
+✅ Modal form validation
+
+✅ Like/unlike functionality
+Snehalatha
+Frontend Developer | React Enthusiast 🚀
