@@ -1,0 +1,108 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.bg-gray-50 {
+  background-color: #f8f9fa;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+/* Assignment 2 specific styles */
+.ant-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #1890ff;
+  margin-bottom: 16px;
+}
+
+.user-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 12px;
+  gap: 4px;
+}
+
+.action-btn:hover {
+  color: #1890ff;
+}
+
+.liked {
+  color: #ff4d4f !important;
+}
+
+.user-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #666;
+}
+
+.user-info-item .anticon {
+  margin-right: 8px;
+  color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .ant-card {
+    margin-bottom: 16px;
+  }
+  
+  .user-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .action-btn {
+    flex: 1;
+    min-width: 60px;
+  }
+}
